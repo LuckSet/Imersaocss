@@ -1,0 +1,41 @@
+body {
+    background-image: url("https://redew.com.br/imagens/background-parallax-portfolio.png");
+   background-size: auto 100vh;
+    font-family: Arial;
+   height: 100vh;
+ }
+ 
+ .menu {
+    background-color: white;      
+ }
+ 
+ .menu ul {
+   display: flex;
+   justify-content:space-around;
+ }
+ 
+ .menu li {
+   list-style: none;  
+ }
+ 
+ a {
+   color: orange;
+   text-decoration: none;
+ }
+ 
+ a:hover {
+   text-decoration: underline;
+ }
+ 
+ .site-subtitle,
+ .site-title {
+   color: black;
+   text-align: center;
+ }
+ 
+ 
+ .site-subtitle {
+   font-style: italic;
+ }
+ 
+ 
