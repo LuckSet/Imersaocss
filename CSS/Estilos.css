@@ -57,12 +57,12 @@ body {
    padding: 10px 20px;
   }
 
- a {
+ .menu a {
    color: rgb(255, 255, 255);
    text-decoration: none;
  }
  
- a:hover {
+ .menu a :hover {
    text-decoration: underline;
  }
  
