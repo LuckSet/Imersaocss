@@ -23,7 +23,7 @@ body {
       font-size: 18px;
     }
 /*breakpoint*/
-@media (min-width: 1200px) {
+@media (min-width: 800px) {
       body {
         font-size: 20px;
        
@@ -74,15 +74,24 @@ body {
 
  .site-title {
    font-size: 4em;
+   font-family: 'Alex Brush', cursive;
  }
  
  
  .site-subtitle {
    font-style: italic;
+   font-family: 'Special Elite', cursive;
+   line-height: 1.5em;
  }
  
+ .portfolio h2 { 
+  font-family: 'Special Elite', cursive;
+  color:skyblue;
+  line-height: 1.5em;
+
+ }
+
  .img-portfolio {
    height: 180px;
    width: 180px;
  }
- 
