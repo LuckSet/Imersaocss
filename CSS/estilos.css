@@ -6,11 +6,13 @@
  }
  
  body {
+   background-repeat: no-repeat;
     background-image: url("../img/Fundo.JPG");
-    background-size: auto 100vh;
+    background-color: skyblue;
+    background-size: cover;
     font-family: 'Roboto', sans-serif;
     height: 100vh;
-    font-size: 10px;
+    font-size: 12px;
   }
  /*se a tela tiver pelo menos 400px vai carregar estes estilos*/
  @media (min-width: 400px) {
@@ -23,7 +25,7 @@
        font-size: 18px;
      }
  /*breakpoint*/
- @media (min-width: 800px) {
+ @media (min-width: 1200px) {
        body {
          font-size: 20px;
         
@@ -49,7 +51,7 @@
    }
   
   .menu li {
-    list-style: none;  
+    list-style: none; 
     }
   
   .menu a {
@@ -85,16 +87,59 @@
     text-shadow: 1px 2px 10px blueviolet;
   }
   
+  .portfolio {
+    background-color:skyblue;
+    padding: 2em;
+    height: 100vh;
+  }
+
   .portfolio h2 { 
    font-family: 'Special Elite', cursive;
-   color:skyblue;
-   line-height: 1.5em;
+   color:white;
    text-shadow: 1px 2px 10px blueviolet;
-   
+   text-align: center;
+   margin-bottom: 1em;
+   font-size: 2em;
+
  
   }
- 
+  
+  .portfolio .grid {
+   display: grid;
+   gap: 2em;
+  }
+
+  @media (min-width: 560px){
+   .portfolio .grid {
+   grid-template-columns: 240px 240px ;
+  }
+}
+
+@media (min-width: 880px){
+  .portfolio .grid {
+  grid-template-columns: repeat(3,280px);
+  align-content: center;
+  justify-content: center;
+  height: calc(100vh - 40px);
+}
+
+  .portfolio figure {
+   text-align: center;
+  }
+
   .img-portfolio {
-    height: 180px;
-    width: 180px;
-  }
+    height: 240px;
+    width: 240px;
+    object-fit: cover;
+    object-position: center;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+}
+  /*@media (min-width: 1200px) {
+    .img-portfolio {
+      height: auto;
+      width: 100%;
+  }*/
