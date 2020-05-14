@@ -1,0 +1,98 @@
+/* soft reset do css */
+* {
+   margin: 0;
+   padding: 0;
+   box-sizing: border-box;
+}
+
+body {
+   background-image: url("../img/fundo.JPG");
+   background-size: auto 100vh;
+   font-family: 'Roboto', sans-serif;
+   height: 100vh;
+   font-size: 10px;
+ }
+/*se a tela tiver pelo menos 400px vai carregar estes estilos*/
+@media (min-width: 400px) {
+  body {
+    font-size: 14px;
+  }
+/*breakpoint*/
+@media (min-width: 600px) {
+    body {
+      font-size: 18px;
+    }
+/*breakpoint*/
+@media (min-width: 800px) {
+      body {
+        font-size: 20px;
+       
+} 
+
+ header {
+   height: 100vh;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+ }
+ 
+ .menu {
+    background-color:skyblue;
+    position:  fixed; 
+    width: 100vw;
+    top: 0;  
+ }
+ 
+ .menu ul {
+   display: flex;
+   justify-content:space-around;
+  }
+ 
+ .menu li {
+   list-style: none;  
+   }
+ 
+ .menu a {
+   display: block;
+   padding: 10px 20px;
+  }
+
+ .menu a {
+   color: rgb(255, 255, 255);
+   text-decoration: none;
+ }
+ 
+ .menu a :hover {
+   text-decoration: underline;
+ }
+ 
+ .site-subtitle,
+ .site-title {
+   color: rgb(44, 150, 212);
+   text-align: center;
+ }
+
+ .site-title {
+   font-size: 4em;
+   font-family: 'Alex Brush', cursive;
+ }
+ 
+ 
+ .site-subtitle {
+   font-style: italic;
+   font-family: 'Special Elite', cursive;
+   line-height: 1.5em;
+   text-shadow: 1px 2px 10px blueviolet;
+ }
+ 
+ .portfolio h2 { 
+  font-family: 'Special Elite', cursive;
+  color:skyblue;
+  line-height: 1.5em;
+
+ }
+
+ .img-portfolio {
+   height: 180px;
+   width: 180px;
+ }
