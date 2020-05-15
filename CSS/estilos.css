@@ -19,17 +19,19 @@
    body {
      font-size: 14px;
    }
+  }
  /*breakpoint*/
  @media (min-width: 600px) {
      body {
        font-size: 18px;
      }
+  }
  /*breakpoint*/
  @media (min-width: 1200px) {
        body {
-         font-size: 20px;
-        
+         font-size: 20px;       
  } 
+}
  
   header {
     height: 100vh;
@@ -39,10 +41,11 @@
   }
   
   .menu {
-     background-color:skyblue;
+     background-color: white;
      position:  fixed; 
      width: 100vw;
      top: 0;  
+     z-index: 1;
   }
   
   .menu ul {
@@ -57,16 +60,51 @@
   .menu a {
     display: block;
     padding: 10px 20px;
-   }
- 
-  .menu a {
-    color: rgb(255, 255, 255);
+    color: skyblue;
     text-decoration: none;
+    transition: background-color 2s, color 2s;
+    -webkit-transition: background-color 2s, color 2s;
+    -moz-transition: background-color 2s, color 2s;
+    -ms-transition: background-color 2s, color 2s;
+    -o-transition: background-color 2s, color 2s;
+}
+
+.menu a:active,
+.menu a:hover {
+  background-color:skyblue;
+  color: white;
+}
+
+a {
+  color: skyblue;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+.titulo {
+  transform: scale(0.2) translateY(50vh);
+  opacity: 0;
+  animation: ease-in-out 2s animacaoTitulo forwards;
+  -webkit-transform: scale(0.2) translateY(50vh);
+  -moz-transform: scale(0.2) translateY(50vh);
+  -ms-transform: scale(0.2) translateY(50vh);
+  -o-transform: scale(0.2) translateY(50vh);
+  -webkit-animation: ease-in-out 2s animacaoTitulo forwards;
+}
+
+@keyframes animacaoTitulo {
+  from {
+    transform: scale(0.2) translateY(50vh);
+    opacity: 0;
   }
-  
-  .menu a :hover {
-    text-decoration: underline;
+  to {
+    transform: scale(1) translateY(0);
+    opacity: 1;
   }
+}
   
   .site-subtitle,
   .site-title {
@@ -87,12 +125,13 @@
     text-shadow: 1px 2px 10px blueviolet;
   }
   
+  .contato,
   .portfolio {
     background-color:skyblue;
     padding: 2em;
-    height: 100vh;
+    min-height: 100vh;
   }
-
+  .contato h2,
   .portfolio h2 { 
    font-family: 'Special Elite', cursive;
    color:white;
@@ -101,7 +140,6 @@
    margin-bottom: 1em;
    font-size: 2em;
 
- 
   }
   
   .portfolio .grid {
@@ -115,12 +153,13 @@
   }
 }
 
-@media (min-width: 880px){
+  @media (min-width: 880px){
   .portfolio .grid {
-  grid-template-columns: repeat(3,280px);
+  grid-template-columns: repeat(3,260px);
   align-content: center;
   justify-content: center;
-  height: calc(100vh - 40px);
+  height: calc(100vh - 8em - 48px);
+   }
 }
 
   .portfolio figure {
@@ -128,18 +167,54 @@
   }
 
   .img-portfolio {
-    height: 240px;
-    width: 240px;
-    object-fit: cover;
-    object-position: center;
-    border-radius: 50%;
-    -webkit-border-radius: 50%;
-    -moz-border-radius: 50%;
-    -ms-border-radius: 50%;
-    -o-border-radius: 50%;
-}
+   height: 240px;
+   width: 240px;
+   object-fit: cover;
+   object-position: center;
+   border-radius: 50%;
+   -webkit-border-radius: 50%;
+   -moz-border-radius: 50%;
+   -ms-border-radius: 50%;
+   -o-border-radius: 50%;
+   transition: transform 500ms;
+  }
+   
+   .img-portfolio:hover {
+   transform: scale(1.2);
+   transform: scale(1.2) ;
+   -webkit-transform: scale(1.2);
+   -moz-transform: scale(1.2);
+   -ms-transform: scale(1.2);
+   -o-transform: scale(1.2);
+} 
+   
+
+
   /*@media (min-width: 1200px) {
     .img-portfolio {
       height: auto;
       width: 100%;
-  }*/
+  }
+}*/
+
+  .contato .icons {
+    text-align: center;
+
+  }
+
+  .contato a {
+  color:whitesmoke;
+  font-size: 5em;
+   }
+   
+  .contato a:active,
+  .contato a:hover {
+  text-decoration: none;
+  text-shadow: 1px 2px 10px purple;  
+}
+
+/*@media (min-width: 560px){
+  .contato .grid {
+  grid-template-columns: 40px 40px ;
+ }
+}
