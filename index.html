@@ -5,9 +5,15 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Lucas Seiti</title>
+  
   <link rel="stylesheet" href="CSS/estilos.css">
+  
   <link href="https://fonts.googleapis.com/css2?family=Alex+Brush&family=Roboto:wght@400;700&family=Special+Elite&display=swap" rel="stylesheet">
+  
+  
   <script src="https://kit.fontawesome.com/6d6952c5be.js" crossorigin="anonymous"></script>
+
+
 </head>
 
 
@@ -15,7 +21,7 @@
 
   <header>
     <nav class="menu">
-      <ul>
+      <ul class="container">
         <li><a href="#sobre">Sobre</a></li>
         <li><a href="#portfolio">Portfólio</a></li>
         <li><a href="#contato">Contato</a></li>
@@ -27,31 +33,91 @@
           <h2 class="site-subtitle">Cursando Design</h2>
     </div>
   </header>
-  <section class="portfolio" id="portfolio">
+  <section class="sobre container" id="sobre">
+       <h2>sobre</h2>
+
+      <figure class="avatar">
+        <img src="./img/minha foto.jpg" alt="Lucas Seiti">
+      </figure> 
+      <P>
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dicta laboriosam quasi voluptatum, unde accusantium, laudantium nam omnis blanditiis nulla dolore hic aut ut repellendus? Optio modi voluptates reprehenderit quo. Aliquam. 
+      </P>
+      
+      <P>
+        Adipisci dolorum consequatur libero iste assumenda reprehenderit ratione dolores at obcaecati non! Laboriosam numquam accusamus sunt reiciendis deleniti aperiam consequuntur reprehenderit odit ducimus nemo? Doloremque dolores omnis fuga quam nobis?
+        Vitae adipisci veritatis quidem, atque itaque qui alias error provident assumenda doloremque accusantium dignissimos enim explicabo dicta perferendis. Molestiae nisi eligendi laudantium vero non itaque debitis fugiat assumenda porro. 
+      </P>
+     <p>
+      Vitae adipisci veritatis quidem, atque itaque qui alias error provident assumenda doloremque accusantium dignissimos enim explicabo dicta perferendis. Molestiae nisi eligendi laudantium vero non itaque debitis fugiat assumenda porro. 
+     </p>
+      <P>
+        Este site foi Construído durante a <a href="https://www.alura.com.br/imersao-css">imersão CSS da Alura </a>;) vlw pela aula, gostei muito!!
+      </P>
+     
+  </section>
+
+
+  <section class="portfolio container" id="portfolio">
 
     <h2>Portfólio</h2>
 
     <div class="grid">
-      <figure>
-        <img class="img-portfolio" src="./img/IMG_1782.JPG" alt="eCommerce">
-        <figcaption>eCommerce</figcaption>
-      </figure>
-      <figure>
-        <img class="img-portfolio" src="./img/IMG_1777.JPG" alt=">Mobile">
-        <figcaption>Mobile</figcaption>
-      </figure>
-      <figure>
-        <img class="img-portfolio" src="./img/IMG_1778.JPG" alt="Web design">
-        <figcaption>Web design</figcaption>
-      </figure>
-      <figure>
-        <img class="img-portfolio" src="./img/IMG_1779.JPG" alt="Projetos pessoais">
-        <figcaption>Projetos pessoais</figcaption>
-      </figure>
+
+    <div class="flip-card">
+      <div class="card">
+        <figure class="card-front">
+          <img class="img-portfolio" src="./img/IMG_1782.JPG" alt="eCommerce">
+          <figcaption></figcaption>
+        </figure>
+  
+        <div class="card-back">
+        <h3>gatos</h3>
+        </div>
+      </div>
+    </div>
+
+
+    <div class="flip-card">
+      <div class="card">
+        <figure>
+          <img class="img-portfolio" src="./img/IMG_1777.JPG" alt=">Mobile">
+          <figcaption></figcaption>
+        </figure>
+        </figure>
+        <div class="card-back">
+          <h3>gatos</h3>
+        </div>
+      </div>
+    </div> 
+
+    <div class="flip-card">
+      <div class="card">
+        <figure>
+          <img class="img-portfolio" src="./img/IMG_1778.JPG" alt="Web design">
+          <figcaption></figcaption>
+        </figure>
+        <div class="card-back">
+          <h3>gatos</h3>
+        </div>
+      </div>
+    </div>
+
+    <div class="flip-card">
+      <div class="card">
+        <figure>
+          <img class="img-portfolio" src="./img/IMG_1779.JPG" alt="Projetos pessoais">
+          <figcaption></figcaption>
+        </figure>
+        <div class="card-back">
+          <h3>gatos</h3>
+        </div>
+      </div>
+    </div>
+
     </div>
   </section>
   
-  <section class="contato" id="contato">
+  <section class="contato container" id="contato">
     <h2>Contato</h2>
     <div class="grid icons">
       
@@ -64,8 +130,8 @@
       <a target="_blank" href="https://www.linkedin.com/in/lucas-seiti-takahara-07b1731a4">
         <i class="fab fa-linkedin"></i>
       </a>
-      <a href="mailto:vanessa.tonini@caelum.com.br">
-        <i class=""></i>
+      <a href="">
+        <i class="fab fa-instagram"></i>
       </a>
     </div>
   </section>
